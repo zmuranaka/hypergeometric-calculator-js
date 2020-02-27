@@ -1,0 +1,102 @@
+/*
+File: rps_styles.css
+Zachary Muranaka
+Styles for hypergeom.html
+*/
+
+html {
+	height: 100%;
+	background: linear-gradient(to top, rgb(200,200,255), white);
+	background: -webkit-linear-gradient(bottom, rgb(200,200,255), white);
+	background: -o-linear-gradient(bottom, rgb(200,200,255), white);
+}
+
+body {
+	max-width: 100%;
+	min-width: 320px;
+	margin: 0;
+	background-color: white;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+
+h1 {
+	margin: 0 0 0.5em 0;
+	padding: 0.5em 0 0.5em 0.5em;
+	font-size: 2.25em;
+	color: white;
+	border: 1px solid black;
+	background: -webkit-linear-gradient(bottom, rgb(0,0,204), rgb(80,80,204));
+	background: -o-linear-gradient(bottom, rgb(0,0,204), rgb(80,80,204));
+	background: linear-gradient(to top, rgb(0,0,204), rgb(80,80,204));
+}
+
+/* Input button styles */
+
+/* Styles the calculate button */
+input[type=button]#calculateBtn {
+	background: linear-gradient(to top, rgb(0,0,204), rgb(80,80,204));
+	background: -webkit-linear-gradient(bottom, rgb(0,0,204), rgb(80,80,204));
+	background: -o-linear-gradient(bottom, rgb(0,0,204), rgb(80,80,204));
+	color: white;
+	height: 2em;
+	width: 5em;
+	font-size: 2em;
+	margin: 0.5em 0 0.5em 9em;
+	border: 1px solid black;
+}
+
+/* Styles the boxes where the user enters the numbers */
+input[type=number] {
+	margin: 0.5em;
+	font-size: 1.5em;
+	width: 3.5em;
+}
+
+/* Styles the label next to the input text box */
+label {
+	display: inline-block; /* Makes the input boxes line up */
+	width: 13em;
+	font-weight: bold;
+	font-size: 1.5em;
+	margin-left: 1em;
+}
+
+/* List styles */
+
+ol#results {
+	padding: 0;
+	margin: 0 0 0.5em 1em;
+}
+
+ol#results li {
+	font-size: 1.5em;
+	list-style-type: none;
+	margin-bottom: 0.2em;
+}
+
+/* Footer styles */
+
+footer {
+	text-align: center;
+	margin-top: 1em;
+	padding-top: 1em;
+	color: white;
+	width: 100%;
+	font-size: 0.8em;
+	font-variant: small-caps;
+	border: 1px solid black;
+	background: -webkit-linear-gradient(rgb(0,0,204), midnightblue);
+	background: -o-linear-gradient(rgb(0,0,204), midnightblue);
+	background: linear-gradient(rgb(0,0,204), midnightblue);
+}
+
+footer a {
+	display: block;
+	color: white;
+	margin: 0.5em 0 1em 0;
+	text-decoration: none;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
