@@ -22,7 +22,7 @@ Desired successes
 ## Directories:
 
 images  
-&nbsp;&nbsp;&nbsp;&nbsp;This folder contains the GitHub logo. 
+&nbsp;&nbsp;&nbsp;&nbsp;This folder contains the GitHub logo.  
 scripts  
 &nbsp;&nbsp;&nbsp;&nbsp;This folder contains the JavaScript that runs solves the hypergeometric distribution.  
 styles  
