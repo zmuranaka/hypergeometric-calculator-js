@@ -24,7 +24,7 @@ Desired successes
 images  
 &nbsp;&nbsp;&nbsp;&nbsp;This folder contains the GitHub logo.  
 scripts  
-&nbsp;&nbsp;&nbsp;&nbsp;This folder contains the JavaScript that runs solves the hypergeometric distribution.  
+&nbsp;&nbsp;&nbsp;&nbsp;This folder contains the JavaScript that solves the hypergeometric distribution.  
 styles  
 &nbsp;&nbsp;&nbsp;&nbsp;This folder contains the stylesheet for the website.
 
