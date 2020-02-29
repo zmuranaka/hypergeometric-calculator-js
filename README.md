@@ -30,6 +30,7 @@ styles
 
 ## Sources:
 
+I got the GitHub logo from [GitHub](https://github.com/logos) and I created the mail and link logos in Adobe Photoshop.  
 Websites that helped me create the project:  
 https://stattrek.com/online-calculator/hypergeometric.aspx  
 &nbsp;&nbsp;&nbsp;&nbsp;The entire inspiration of the project came from this website. My website is laid out similarly, from the order the information is asked to how it is displayed. I also used this website when checking that my program was coming up with the correct numbers.  

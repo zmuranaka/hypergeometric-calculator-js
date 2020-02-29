@@ -8,36 +8,37 @@
 		Webpage for hypergeometric calculator
 	 -->
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 	<title>Hypergeometric Calculator</title>
 	<link href="styles/hypergeom_styles.css" rel="stylesheet">
 	<script src="scripts/hypergeom.js" async></script>
 </head>
 
 <body>
-	<h1>Hypergeometric Calculator</h1>
+	<h1>Hypergeometric <span>Calculator</span></h1>
 	
 	<div id="nums">
 		<div id="popSizeDiv">
 			<label for="popSize">Population Size: </label>
-			<input type="number" min="0" id="popSize" class="column2">
+			<input type="number" min="0" id="popSize">
 		</div>
 		<div id="popSuccessesDiv">
 			<label for="popSuccesses">Population Successes: </label>
-			<input type="number" min="0" id="popSuccesses" class="column2">
+			<input type="number" min="0" id="popSuccesses">
 		</div>
 		<div id="sampleSizeDiv">
 			<label for="popSuccesses">Sample Size: </label>
-			<input type="number" min="0" id="sampleSize" class="column2">
+			<input type="number" min="0" id="sampleSize">
 		</div>
 		<div id="desiredSuccessesDiv">
 			<label for="popSuccesses">Desired Successes: </label>
-			<input type="number" min="0" id="desiredSuccesses" class="column2">
+			<input type="number" min="0" id="desiredSuccesses">
 		</div>
 	</div>
 	
 	<input type="button" id="calculateBtn" value="Calculate">
 	
-	<ol id="results">
+	<ul id="results">
 		<li id="exactly">
 			Chance of exactly desired successes:
 		</li>
@@ -53,13 +54,15 @@
 		<li id="orGreater">
 			Chance of desired successes or greater:
 		</li>
-	</ol>
+	</ul>
 	
 	<footer>
 		<div>
 			&#9400; 2020 Zachary Muranaka
-			<a href="mailto:zacharymuranaka@mail.weber.edu">zacharymuranaka@mail.weber.edu</a>
-			<a href="https://github.com/zmuranaka"><img src="images/githubLogo.png" alt=""/> GitHub</a>
+			<br>
+			<a href="mailto:zacharymuranaka@mail.weber.edu"><img src="images/mailLogo.png" alt=""/></a>
+			<a href="https://github.com/zmuranaka"><img src="images/githubLogo.png" alt=""/></a>
+			<a href="http://icarus.cs.weber.edu/~zm83483/index.html"><img src="images/linkLogo.png" alt=""/></a>
 		</div>
 	</footer>
 	

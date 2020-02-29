@@ -13,7 +13,7 @@ html {
 
 body {
 	max-width: 100%;
-	min-width: 320px;
+	min-width: 320px; /* Narrowest screen in common use */
 	margin: 0;
 	background-color: white;
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
@@ -32,6 +32,13 @@ h1 {
 
 /* Input button styles */
 
+/* Styles the boxes where the user enters the numbers */
+input[type=number] {
+	margin: 0.5em;
+	font-size: 1.5em;
+	width: 3.5em;
+}
+
 /* Styles the calculate button */
 input[type=button]#calculateBtn {
 	background: linear-gradient(to top, rgb(0,0,204), rgb(80,80,204));
@@ -43,13 +50,13 @@ input[type=button]#calculateBtn {
 	font-size: 2em;
 	margin: 0.5em 0 0.5em 9em;
 	border: 1px solid black;
+	cursor: pointer;
 }
 
-/* Styles the boxes where the user enters the numbers */
-input[type=number] {
-	margin: 0.5em;
-	font-size: 1.5em;
-	width: 3.5em;
+/* Changes the color of the calculate button when clicked */
+input[type=button]#calculateBtn:active {
+	background: linear-gradient(to top, yellow, white);;
+	color: rgb(0,0,30);
 }
 
 /* Styles the label next to the input text box */
@@ -63,12 +70,12 @@ label {
 
 /* List styles */
 
-ol#results {
+ul#results {
 	padding: 0;
 	margin: 0 0 0.5em 1em;
 }
 
-ol#results li {
+ul#results li {
 	font-size: 1.5em;
 	list-style-type: none;
 	margin-bottom: 0.2em;
@@ -91,12 +98,57 @@ footer {
 }
 
 footer a {
-	display: block;
+	display: inline-block;
 	color: white;
-	margin: 0.5em 0 1em 0;
+	margin: 1em 1em 1em 0;
 	text-decoration: none;
 }
 
-footer a:hover {
-	text-decoration: underline;
+/* Styling that applies to small screens, like phones */
+@media screen and (max-width: 495px) {
+
+	body {
+		text-align: center;
+	}
+
+	h1 {
+		padding-left: 0;
+	}
+	
+	h1 span{
+		display: block;
+	}
+
+	label {
+		margin-left: 0;
+	}
+
+	input[type=button]#calculateBtn {
+		margin-left: 0;
+	}
+
+	input[type=number] {
+		width: 7em;
+		text-align: center;
+	}
+
+	ul#results {
+		margin-left: 0;
+	}
+	
+	ul#results li b {
+		display: block;
+	}
+
+}
+
+/* Styling that applies to medium-sized screens, like smaller tablets */
+@media screen and (min-width: 496px) and (max-width: 725px) {
+
+	ul#results li b {
+		display: block;
+		text-align: right;
+		margin-right: 1em;
+	}
+
 }

@@ -261,9 +261,9 @@ document.getElementById("calculateBtn").onclick = function()
 	var orLessChance = deck2.orLess(exactChance); // We use deck2 because the orGreaterChance method altered deck
 
 	// Display the results
-	document.getElementById("exactly").textContent = "Chance of exactly desired successes: " + exactChance;
-	document.getElementById("lessThan").textContent = "Chance of less than desired successes: " + (orLessChance - exactChance);
-	document.getElementById("orLess").textContent = "Chance of desired successes or less: " + orLessChance;
-	document.getElementById("greaterThan").textContent = "Chance of greater than desired successes: " + (orGreaterChance - exactChance);
-	document.getElementById("orGreater").textContent = "Chance of desired successes or greater: " + orGreaterChance;
+	document.getElementById("exactly").innerHTML = "Chance of exactly desired successes: " + "<b>" + exactChance + "</b>";
+	document.getElementById("lessThan").innerHTML = "Chance of less than desired successes: " + "<b>" + (orLessChance - exactChance) + "</b>";
+	document.getElementById("orLess").innerHTML = "Chance of desired successes or less: " + "<b>" + orLessChance + "</b>";
+	document.getElementById("greaterThan").innerHTML = "Chance of greater than desired successes: " + "<b>" + (orGreaterChance - exactChance) + "</b>";
+	document.getElementById("orGreater").innerHTML = "Chance of desired successes or greater: " + "<b>" + orGreaterChance + "</b>";
 };
