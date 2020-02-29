@@ -22,7 +22,7 @@ Desired successes
 ## Directories:
 
 images  
-&nbsp;&nbsp;&nbsp;&nbsp;This folder contains the GitHub logo.  
+&nbsp;&nbsp;&nbsp;&nbsp;This folder contains the social media logos.  
 scripts  
 &nbsp;&nbsp;&nbsp;&nbsp;This folder contains the JavaScript that solves the hypergeometric distribution.  
 styles  
