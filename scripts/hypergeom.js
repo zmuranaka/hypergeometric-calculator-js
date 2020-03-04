@@ -198,8 +198,25 @@ class Deck
 	get sampleCombinations(){ return this.combination; }
 }
 
-// Runs when the calculateBtn is clicked
-document.getElementById("calculateBtn").onclick = function()
+document.getElementById("calculateBtn").addEventListener("click", calculate); // Clicking the calculatebtn calls the calculate() function
+
+// Add an event listner to every number input that calls the calculate() function when their value changes
+var numberInputs = document.querySelectorAll('input[type="number"]');
+for(let i = 0; i < numberInputs.length; i++)
+	numberInputs[i].addEventListener("change", calculate);
+
+
+// Add an event listener to the page so pressing enter calls the calculate() function
+window.addEventListener("keyup",
+function(e)
+{
+	if(e.keyCode == 13) // 13 is the keycode for enter
+		calculate();
+});
+
+
+// Calculates the hypergeometric probability
+function calculate()
 {
 	/* 
 	 * Sets the local variables to be equal to whatever the user entered in the input boxes.
