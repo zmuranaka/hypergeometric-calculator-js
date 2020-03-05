@@ -5,151 +5,151 @@ Styles for hypergeom.html
 */
 
 html {
-	height: 100%;
-	background: linear-gradient(to top, rgb(200,200,255), white);
-	background: -webkit-linear-gradient(bottom, rgb(200,200,255), white);
-	background: -o-linear-gradient(bottom, rgb(200,200,255), white);
+    min-height: 100%;
+    background: linear-gradient(to top, rgb(200,200,255), white);
+    background: -webkit-linear-gradient(bottom, rgb(200,200,255), white);
+    background: -o-linear-gradient(bottom, rgb(200,200,255), white);
 }
 
 body {
-	max-width: 100%;
-	min-width: 320px; /* Narrowest screen in common use */
-	margin: 0;
-	background-color: white;
-	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+    max-width: 100%;
+    min-width: 320px; /* Narrowest screen in common use */
+    margin: 0;
+    background-color: white;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 }
 
 h1 {
-	margin: 0 0 0.5em 0;
-	padding: 0.5em 0 0.5em 0.5em;
-	font-size: 2.25em;
-	color: white;
-	border: 1px solid black;
-	background: -webkit-linear-gradient(bottom, rgb(0,0,204), rgb(80,80,204));
-	background: -o-linear-gradient(bottom, rgb(0,0,204), rgb(80,80,204));
-	background: linear-gradient(to top, rgb(0,0,204), rgb(80,80,204));
+    margin: 0 0 0.5em 0;
+    padding: 0.5em 0 0.5em 0.5em;
+    font-size: 2.25em;
+    color: white;
+    border: 1px solid black;
+    background: -webkit-linear-gradient(bottom, rgb(0,0,204), rgb(80,80,204));
+    background: -o-linear-gradient(bottom, rgb(0,0,204), rgb(80,80,204));
+    background: linear-gradient(to top, rgb(0,0,204), rgb(80,80,204));
 }
 
 /* Input button styles */
 
 /* Styles the boxes where the user enters the numbers */
 input[type=number] {
-	margin: 0.5em;
-	font-size: 1.5em;
-	width: 3.5em;
+    margin: 0.5em;
+    font-size: 1.5em;
+    width: 3.5em;
 }
 
 /* Styles the calculate button */
 input[type=button]#calculateBtn {
-	background: linear-gradient(to top, rgb(0,0,204), rgb(80,80,204));
-	background: -webkit-linear-gradient(bottom, rgb(0,0,204), rgb(80,80,204));
-	background: -o-linear-gradient(bottom, rgb(0,0,204), rgb(80,80,204));
-	color: white;
-	height: 2em;
-	width: 5em;
-	font-size: 2em;
-	margin: 0.5em 0 0.5em 9em;
-	padding: 0;
-	border: 1px solid black;
-	cursor: pointer;
+    background: linear-gradient(to top, rgb(0,0,204), rgb(80,80,204));
+    background: -webkit-linear-gradient(bottom, rgb(0,0,204), rgb(80,80,204));
+    background: -o-linear-gradient(bottom, rgb(0,0,204), rgb(80,80,204));
+    color: white;
+    height: 2em;
+    width: 5em;
+    font-size: 2em;
+    margin: 0.5em 0 0.5em 9em;
+    padding: 0;
+    border: 1px solid black;
+    cursor: pointer;
 }
 
 /* Changes the color of the calculate button when clicked */
 input[type=button]#calculateBtn:active {
-	background: linear-gradient(to top, yellow, white);;
-	color: rgb(0,0,30);
+    background: linear-gradient(to top, yellow, white);;
+    color: rgb(0,0,30);
 }
 
 /* Styles the label next to the input text box */
 label {
-	display: inline-block; /* Makes the input boxes line up */
-	width: 13em;
-	font-weight: bold;
-	font-size: 1.5em;
-	margin-left: 1em;
+    display: inline-block; /* Makes the input boxes line up */
+    width: 13em;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-left: 1em;
 }
 
 /* List styles */
 
 ul#results {
-	padding: 0;
-	margin: 0 0 0.5em 1em;
+    padding: 0;
+    margin: 0 0 0.5em 1em;
 }
 
 ul#results li {
-	font-size: 1.5em;
-	list-style-type: none;
-	margin-bottom: 0.2em;
+    font-size: 1.5em;
+    list-style-type: none;
+    margin-bottom: 0.2em;
 }
 
 /* Footer styles */
 
 footer {
-	text-align: center;
-	margin-top: 1em;
-	padding-top: 1em;
-	color: white;
-	width: 100%;
-	font-size: 0.8em;
-	font-variant: small-caps;
-	border: 1px solid black;
-	background: -webkit-linear-gradient(rgb(0,0,204), midnightblue);
-	background: -o-linear-gradient(rgb(0,0,204), midnightblue);
-	background: linear-gradient(rgb(0,0,204), midnightblue);
+    text-align: center;
+    margin-top: 1em;
+    padding-top: 1em;
+    color: white;
+    width: 100%;
+    font-size: 0.8em;
+    font-variant: small-caps;
+    border: 1px solid black;
+    background: -webkit-linear-gradient(rgb(0,0,204), midnightblue);
+    background: -o-linear-gradient(rgb(0,0,204), midnightblue);
+    background: linear-gradient(rgb(0,0,204), midnightblue);
 }
 
 footer a {
-	display: inline-block;
-	color: white;
-	margin: 1em 1em 1em 0;
-	text-decoration: none;
+    display: inline-block;
+    color: white;
+    margin: 1em 1em 1em 0;
+    text-decoration: none;
 }
 
 /* Styling that applies to small screens, like phones */
 @media screen and (max-width: 495px) {
 
-	body {
-		text-align: center;
-	}
+    body {
+        text-align: center;
+    }
 
-	h1 {
-		padding-left: 0;
-	}
-	
-	h1 span {
-		display: block;
-	}
+    h1 {
+        padding-left: 0;
+    }
+    
+    h1 span {
+        display: block;
+    }
 
-	label {
-		margin-left: 0;
-	}
+    label {
+        margin-left: 0;
+    }
 
-	input[type=button]#calculateBtn {
-		margin-left: 0;
-	}
+    input[type=button]#calculateBtn {
+        margin-left: 0;
+    }
 
-	input[type=number] {
-		width: 7em;
-		text-align: center;
-	}
+    input[type=number] {
+        width: 7em;
+        text-align: center;
+    }
 
-	ul#results {
-		margin-left: 0;
-	}
-	
-	ul#results li b {
-		display: block;
-	}
+    ul#results {
+        margin-left: 0;
+    }
+    
+    ul#results li b {
+        display: block;
+    }
 
 }
 
 /* Styling that applies to medium-sized screens, like smaller tablets */
 @media screen and (min-width: 496px) and (max-width: 725px) {
 
-	ul#results li b {
-		display: block;
-		text-align: right;
-		margin-right: 1em;
-	}
+    ul#results li b {
+        display: block;
+        text-align: right;
+        margin-right: 1em;
+    }
 
 }

@@ -2,70 +2,70 @@
 <html lang="en">
 
 <head>
-	<!--
-		File: hypergeom.html
-		Zachary Muranaka
-		Webpage for hypergeometric calculator
-	 -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-	<title>Hypergeometric Calculator</title>
-	<link href="styles/hypergeom_styles.css" rel="stylesheet">
-	<script src="scripts/hypergeom.js" async></script>
+    <!--
+        File: hypergeom.html
+        Zachary Muranaka
+        Webpage for hypergeometric calculator
+     -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Hypergeometric Calculator</title>
+    <link href="styles/hypergeom_styles.css" rel="stylesheet">
+    <script src="scripts/hypergeom.js" async></script>
 </head>
 
 <body>
-	<h1>Hypergeometric <span>Calculator</span></h1>
-	
-	<div id="nums">
-		<div id="popSizeDiv">
-			<label for="popSize">Population Size: </label>
-			<input type="number" min="0" id="popSize">
-		</div>
-		<div id="popSuccessesDiv">
-			<label for="popSuccesses">Population Successes: </label>
-			<input type="number" min="0" id="popSuccesses">
-		</div>
-		<div id="sampleSizeDiv">
-			<label for="popSuccesses">Sample Size: </label>
-			<input type="number" min="0" id="sampleSize">
-		</div>
-		<div id="desiredSuccessesDiv">
-			<label for="popSuccesses">Desired Successes: </label>
-			<input type="number" min="0" id="desiredSuccesses">
-		</div>
-	</div>
-	
-	<input type="button" id="calculateBtn" value="Calculate">
-	
-	<ul id="results">
-		<li id="exactly">
-			Chance of exactly desired successes:
-		</li>
-		<li id="lessThan">
-			Chance of less than desired successes:
-		</li>
-		<li id="orLess">
-			Chance of desired successes or less:
-		</li>
-		<li id="greaterThan">
-			Chance of greater than desired successes:
-		</li>
-		<li id="orGreater">
-			Chance of desired successes or greater:
-		</li>
-	</ul>
-	
-	<footer>
-		<div>
-			&#9400; 2020 Zachary Muranaka
-			<br>
-			<a href="mailto:zacharymuranaka@mail.weber.edu"><img src="images/mailLogo.png" alt=""/></a>
-			<a href="https://github.com/zmuranaka" target="_blank"><img src="images/githubLogo.png" alt=""/></a>
-			<a href="http://icarus.cs.weber.edu/~zm83483/index.html" target="_blank"><img src="images/linkLogo.png" alt=""/></a>
-		</div>
-	</footer>
-	
+    <h1>Hypergeometric <span>Calculator</span></h1>
+    
+    <div id="nums">
+        <div id="popSizeDiv">
+            <label for="popSize">Population Size: </label>
+            <input type="number" min="0" id="popSize">
+        </div>
+        <div id="popSuccessesDiv">
+            <label for="popSuccesses">Population Successes: </label>
+            <input type="number" min="0" id="popSuccesses">
+        </div>
+        <div id="sampleSizeDiv">
+            <label for="popSuccesses">Sample Size: </label>
+            <input type="number" min="0" id="sampleSize">
+        </div>
+        <div id="desiredSuccessesDiv">
+            <label for="popSuccesses">Desired Successes: </label>
+            <input type="number" min="0" id="desiredSuccesses">
+        </div>
+    </div>
+    
+    <input type="button" id="calculateBtn" value="Calculate">
+    
+    <ul id="results">
+        <li id="exactly">
+            Chance of exactly desired successes:
+        </li>
+        <li id="lessThan">
+            Chance of less than desired successes:
+        </li>
+        <li id="orLess">
+            Chance of desired successes or less:
+        </li>
+        <li id="greaterThan">
+            Chance of greater than desired successes:
+        </li>
+        <li id="orGreater">
+            Chance of desired successes or greater:
+        </li>
+    </ul>
+    
+    <footer>
+        <div>
+            &#9400; 2020 Zachary Muranaka
+            <br>
+            <a href="mailto:zacharymuranaka@mail.weber.edu"><img src="images/mailLogo.png" alt=""/></a>
+            <a href="https://github.com/zmuranaka" target="_blank"><img src="images/githubLogo.png" alt=""/></a>
+            <a href="http://icarus.cs.weber.edu/~zm83483/index.html" target="_blank"><img src="images/linkLogo.png" alt=""/></a>
+        </div>
+    </footer>
+    
 </body>
 
 </html>
