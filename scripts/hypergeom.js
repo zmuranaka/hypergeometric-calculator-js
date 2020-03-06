@@ -277,10 +277,23 @@ function calculate()
     var orGreaterChance = deck.orGreater(exactChance);
     var orLessChance = deck2.orLess(exactChance); // We use deck2 because the orGreaterChance method altered deck
 
+    /*
+     * Write the HTML for the results
+     *
+     * The toFixed(18) rounds the numbers to 18 decimal places and converts them to strings
+     * The parseFloat() parses the strings back to floats which drops any excess zeroes
+     * For example 0.toFixed(18) would be 0.000000000000000000, but parseFloat(0.toFixed(18)) is just 0
+     */
+    var exactlyHTML = "Chance of exactly desired successes: " + "<b>" + parseFloat(exactChance.toFixed(18)) + "</b>";
+    var lessThanHTML = "Chance of less than desired successes: " + "<b>" + parseFloat((orLessChance - exactChance).toFixed(18)) + "</b>";
+    var orLessHTML = "Chance of desired successes or less: " + "<b>" + parseFloat(orLessChance.toFixed(18)) + "</b>";
+    var greaterThanHTML = "Chance of greater than desired successes: " + "<b>" + parseFloat((orGreaterChance - exactChance).toFixed(18)) + "</b>";
+    var orGreaterHTML = "Chance of desired successes or greater: " + "<b>" + parseFloat(orGreaterChance.toFixed(18)) + "</b>";
+
     // Display the results
-    document.getElementById("exactly").innerHTML = "Chance of exactly desired successes: " + "<b>" + exactChance + "</b>";
-    document.getElementById("lessThan").innerHTML = "Chance of less than desired successes: " + "<b>" + (orLessChance - exactChance) + "</b>";
-    document.getElementById("orLess").innerHTML = "Chance of desired successes or less: " + "<b>" + orLessChance + "</b>";
-    document.getElementById("greaterThan").innerHTML = "Chance of greater than desired successes: " + "<b>" + (orGreaterChance - exactChance) + "</b>";
-    document.getElementById("orGreater").innerHTML = "Chance of desired successes or greater: " + "<b>" + orGreaterChance + "</b>";
+    document.getElementById("exactly").innerHTML = exactlyHTML;
+    document.getElementById("lessThan").innerHTML = lessThanHTML;
+    document.getElementById("orLess").innerHTML = orLessHTML;
+    document.getElementById("greaterThan").innerHTML = greaterThanHTML;
+    document.getElementById("orGreater").innerHTML = orGreaterHTML;
 };
