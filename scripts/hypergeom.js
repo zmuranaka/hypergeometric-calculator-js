@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 /*
 File: hypergeom.js
@@ -218,6 +218,7 @@ function(e)
 // Calculates the hypergeometric probability
 function calculate()
 {
+    var popSizeInput, popSuccessesInput, sampleSizeInput, desiredSuccessesInput;
     /* 
      * Sets the local variables to be equal to whatever the user entered in the input boxes.
      * The || 0 means that if the parseInt() does not return a valid number, then the
@@ -226,7 +227,7 @@ function calculate()
      */
     if(document.getElementById("popSize").value >= 0) // If the popSize input is at least 0
     {
-        var popSizeInput = parseInt(document.getElementById("popSize").value) || 0;
+        popSizeInput = parseInt(document.getElementById("popSize").value) || 0;
         document.getElementById("popSize").value = popSizeInput;
     }
     else // The user entered a negative number
@@ -237,7 +238,7 @@ function calculate()
 
     if(document.getElementById("popSuccesses").value >= 0) // If the popSuccesses input is at least 0
     {
-        var popSuccessesInput = parseInt(document.getElementById("popSuccesses").value) || 0;
+        popSuccessesInput = parseInt(document.getElementById("popSuccesses").value) || 0;
         document.getElementById("popSuccesses").value = popSuccessesInput;
     }
     else // The user entered a negative number
@@ -248,7 +249,7 @@ function calculate()
 
     if(document.getElementById("sampleSize").value >= 0) // If the sampleSize input is at least 0
     {
-        var sampleSizeInput = parseInt(document.getElementById("sampleSize").value) || 0;
+        sampleSizeInput = parseInt(document.getElementById("sampleSize").value) || 0;
         document.getElementById("sampleSize").value = sampleSizeInput;
     }
     else // The user entered a negative number
@@ -259,7 +260,7 @@ function calculate()
 
     if(document.getElementById("desiredSuccesses").value >= 0) // If the desiredSuccesses input is at least 0
     {
-        var desiredSuccessesInput = parseInt(document.getElementById("desiredSuccesses").value) || 0;
+        desiredSuccessesInput = parseInt(document.getElementById("desiredSuccesses").value) || 0;
         document.getElementById("desiredSuccesses").value = desiredSuccessesInput;
     }
     else // The user entered a negative number
@@ -296,4 +297,4 @@ function calculate()
     document.getElementById("orLess").innerHTML = orLessHTML;
     document.getElementById("greaterThan").innerHTML = greaterThanHTML;
     document.getElementById("orGreater").innerHTML = orGreaterHTML;
-};
+}
