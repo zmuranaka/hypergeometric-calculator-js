@@ -40,7 +40,7 @@ input[type=number] {
 }
 
 /* Styles the calculate button */
-input[type=button]#calculateBtn {
+#calculateBtn {
     background: linear-gradient(to top, rgb(0, 0, 204), rgb(80,80,204));
     background: -webkit-linear-gradient(bottom, rgb(0, 0, 204), rgb(80,80,204));
     background: -o-linear-gradient(bottom, rgb(0, 0, 204), rgb(80,80,204));
@@ -55,7 +55,7 @@ input[type=button]#calculateBtn {
 }
 
 /* Changes the color of the calculate button when clicked */
-input[type=button]#calculateBtn:active {
+#calculateBtn:active {
     background: linear-gradient(to top, yellow, white);
     background: -webkit-linear-gradient(bottom, yellow, white);
     background: -o-linear-gradient(bottom, yellow, white);
@@ -73,12 +73,12 @@ label {
 
 /* List styles */
 
-ul#results {
+#results {
     padding: 0;
     margin: 0 0 0.5em 1em;
 }
 
-ul#results li {
+#results li {
     font-size: 1.5em;
     list-style-type: none;
     margin-bottom: 0.2em;
@@ -110,45 +110,31 @@ footer a {
 /* Styling that applies to small screens, like phones */
 @media screen and (max-width: 495px) {
 
-    body {
-        text-align: center;
-    }
+    body { text-align: center }
 
-    h1 {
-        padding-left: 0;
-    }
+    h1 { padding-left: 0 }
     
-    h1 span {
-        display: block;
-    }
+    h1 span { display: block }
 
-    label {
-        margin-left: 0;
-    }
+    label { margin-left: 0 }
 
-    input[type=button]#calculateBtn {
-        margin-left: 0;
-    }
+    #calculateBtn { margin-left: 0 }
 
     input[type=number] {
         width: 7em;
         text-align: center;
     }
 
-    ul#results {
-        margin-left: 0;
-    }
+    #results { margin-left: 0 }
     
-    ul#results li b {
-        display: block;
-    }
+    #results li b { display: block }
 
 }
 
 /* Styling that applies to medium-sized screens, like smaller tablets */
 @media screen and (min-width: 496px) and (max-width: 725px) {
 
-    ul#results li b {
+    #results li b {
         display: block;
         text-align: right;
         margin-right: 1em;

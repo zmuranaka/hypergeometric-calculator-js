@@ -35,8 +35,7 @@ function ncr(n, r)
      * Therefore, we can substitute (n - r) for r if we have a larger r value
      * Attempting to prevent overflow, if(n - r) is less than r we use it instead
      */
-    if(n - r < r)
-        r = n - r;
+    if(n - r < r) r = n - r;
 
     // Tries to calculate the combination of n and r
     try
@@ -130,13 +129,9 @@ class Deck
                 this.combination = ncr(sampleSize, desiredSuccesses); // The combination of sampleSize and desiredSuccesses (nCr, where n = sampleSize and r = desiredSuccesses)
             }
             // It is possible to construct a valid Deck that still results in a divide-by-zero error
-            catch(err)
-            {
-                this.constructorFailure();
-            }
+            catch(err) { this.constructorFailure(); }
         }
-        else
-            this.constructorFailure();
+        else this.constructorFailure();
     }
 
     // The numbers the user entered failed to construct a valid Deck object
