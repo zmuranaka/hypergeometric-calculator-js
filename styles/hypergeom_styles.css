@@ -24,7 +24,8 @@ h1 {
     padding: 0.5em 0 0.5em 0.5em;
     font-size: 2.25em;
     color: white;
-    border: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
     background: -webkit-linear-gradient(bottom, rgb(0, 0, 204), rgb(80,80,204));
     background: -o-linear-gradient(bottom, rgb(0, 0, 204), rgb(80,80,204));
     background: linear-gradient(to top, rgb(0, 0, 204), rgb(80,80,204));
@@ -94,7 +95,8 @@ footer {
     width: 100%;
     font-size: 0.8em;
     font-variant: small-caps;
-    border: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
     background: -webkit-linear-gradient(rgb(0, 0, 204), midnightblue);
     background: -o-linear-gradient(rgb(0, 0, 204), midnightblue);
     background: linear-gradient(rgb(0, 0, 204), midnightblue);
