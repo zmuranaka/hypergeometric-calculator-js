@@ -1,5 +1,5 @@
 /*
-File: rps_styles.css
+File: hypergeom_styles.css
 Zachary Muranaka
 Styles for hypergeom.html
 */
@@ -7,8 +7,6 @@ Styles for hypergeom.html
 html {
     min-height: 100%;
     background: linear-gradient(to top, rgb(200, 200, 255), white);
-    background: -webkit-linear-gradient(bottom, rgb(200, 200, 255), white);
-    background: -o-linear-gradient(bottom, rgb(200, 200, 255), white);
 }
 
 body {
@@ -26,8 +24,6 @@ h1 {
     color: white;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    background: -webkit-linear-gradient(bottom, rgb(0, 0, 204), rgb(80,80,204));
-    background: -o-linear-gradient(bottom, rgb(0, 0, 204), rgb(80,80,204));
     background: linear-gradient(to top, rgb(0, 0, 204), rgb(80,80,204));
 }
 
@@ -43,8 +39,6 @@ input[type=number] {
 /* Styles the calculate button */
 #calculateBtn {
     background: linear-gradient(to top, rgb(0, 0, 204), rgb(80,80,204));
-    background: -webkit-linear-gradient(bottom, rgb(0, 0, 204), rgb(80,80,204));
-    background: -o-linear-gradient(bottom, rgb(0, 0, 204), rgb(80,80,204));
     color: white;
     height: 2em;
     width: 5em;
@@ -58,8 +52,6 @@ input[type=number] {
 /* Changes the color of the calculate button when clicked */
 #calculateBtn:active {
     background: linear-gradient(to top, yellow, white);
-    background: -webkit-linear-gradient(bottom, yellow, white);
-    background: -o-linear-gradient(bottom, yellow, white);
     color: rgb(0, 0, 30);
 }
 
@@ -97,8 +89,6 @@ footer {
     font-variant: small-caps;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    background: -webkit-linear-gradient(rgb(0, 0, 204), midnightblue);
-    background: -o-linear-gradient(rgb(0, 0, 204), midnightblue);
     background: linear-gradient(rgb(0, 0, 204), midnightblue);
 }
 
