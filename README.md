@@ -2,7 +2,7 @@
 
 ## What is this Project?
 
-This project is a hypergeometric calculator GUI built with HTML, CSS, and JavaScript. Hypergeometric calculators determine the probability to get a desired number of successes out of a number of draws from a population without replacement. For example, if you have a standard deck of playing cards, and you want to determine the probability that you get all four aces out of a hand of five cards, a hypergeometric calculator can solve that.
+This project is a hypergeometric calculator web application built with HTML, CSS, and JavaScript. Hypergeometric calculators determine the probability to get a desired number of successes out of a number of draws from a population without replacement. For example, if you have a standard deck of playing cards, and you want to determine the probability that you get all four aces out of a hand of five cards, a hypergeometric calculator can solve that.
 
 ## How do I use the Website?
 

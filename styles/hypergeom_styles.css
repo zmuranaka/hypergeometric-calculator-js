@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    max-width: 100%;
+    width: 100%;
     min-width: 320px; /* Narrowest screen in common use */
     margin: 0;
     background-color: white;
@@ -20,34 +20,36 @@ body {
 h1 {
     margin: 0 0 0.5em 0;
     padding: 0.5em 0 0.5em 0.5em;
-    font-size: 2.25em;
-    color: white;
+    background: linear-gradient(to top, rgb(0, 0, 204), rgb(80,80,204));
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    background: linear-gradient(to top, rgb(0, 0, 204), rgb(80,80,204));
+    color: white;
+    font-size: 2.25em;
 }
 
 /* Input button styles */
 
 /* Styles the boxes where the user enters the numbers */
 input[type=number] {
+    width: 3.5em;
     margin: 0.5em;
     font-size: 1.5em;
-    width: 3.5em;
 }
 
 /* Styles the calculate button */
 #calculateBtn {
-    background: linear-gradient(to top, rgb(0, 0, 204), rgb(80,80,204));
-    color: white;
-    height: 2em;
     width: 5em;
-    font-size: 2em;
+    height: 2em;
     margin: 0.5em 0 0.5em 9em;
     padding: 0;
+    background: linear-gradient(to top, rgb(0, 0, 204), rgb(80,80,204));
     border: 1px solid black;
     cursor: pointer;
+    color: white;
+    font-size: 2em;
 }
+
+#calculateBtn:hover { background: linear-gradient(to top, rgb(0, 175, 255), rgb(0, 255, 255)) }
 
 /* Changes the color of the calculate button when clicked */
 #calculateBtn:active {
@@ -59,43 +61,43 @@ input[type=number] {
 label {
     display: inline-block; /* Makes the input boxes line up */
     width: 13em;
-    font-weight: bold;
-    font-size: 1.5em;
     margin-left: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 /* List styles */
 
 #results {
-    padding: 0;
     margin: 0 0 0.5em 1em;
+    padding: 0;
 }
 
 #results li {
+    margin-bottom: 0.2em;
     font-size: 1.5em;
     list-style-type: none;
-    margin-bottom: 0.2em;
 }
 
 /* Footer styles */
 
 footer {
-    text-align: center;
+    width: 100%;
     margin-top: 1em;
     padding-top: 1em;
-    color: white;
-    width: 100%;
-    font-size: 0.8em;
-    font-variant: small-caps;
+    background: linear-gradient(rgb(0, 0, 204), midnightblue);
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    background: linear-gradient(rgb(0, 0, 204), midnightblue);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    font-variant: small-caps;
 }
 
 footer a {
     display: inline-block;
-    color: white;
     margin: 1em 1em 1em 0;
+    color: white;
     text-decoration: none;
 }
 
@@ -128,8 +130,8 @@ footer a {
 
     #results li b {
         display: block;
-        text-align: right;
         margin-right: 1em;
+        text-align: right;
     }
 
 }
