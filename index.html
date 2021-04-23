@@ -10,27 +10,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <title>Hypergeometric Calculator</title>
-    <link href="styles/hypergeom_styles.css" rel="stylesheet">
+    <link href="styles/hypergeomStyles.css" rel="stylesheet">
     <script src="scripts/hypergeom.js" async></script>
 </head>
 
 <body>
     <h1>Hypergeometric <span>Calculator</span></h1>
     
-    <div id="nums">
-        <div id="popSizeDiv">
+    <div>
+        <div>
             <label for="popSize">Population Size: </label>
             <input type="number" min="0" id="popSize">
         </div>
-        <div id="popSuccessesDiv">
+        <div>
             <label for="popSuccesses">Population Successes: </label>
             <input type="number" min="0" id="popSuccesses">
         </div>
-        <div id="sampleSizeDiv">
+        <div>
             <label for="popSuccesses">Sample Size: </label>
             <input type="number" min="0" id="sampleSize">
         </div>
-        <div id="desiredSuccessesDiv">
+        <div>
             <label for="popSuccesses">Desired Successes: </label>
             <input type="number" min="0" id="desiredSuccesses">
         </div>
@@ -39,19 +39,19 @@
     <input type="button" id="calculateBtn" value="Calculate">
     
     <ul id="results">
-        <li id="exactly">
+        <li>
             Chance of exactly desired successes:
         </li>
-        <li id="lessThan">
+        <li>
             Chance of less than desired successes:
         </li>
-        <li id="orLess">
+        <li>
             Chance of desired successes or less:
         </li>
-        <li id="greaterThan">
+        <li>
             Chance of greater than desired successes:
         </li>
-        <li id="orGreater">
+        <li>
             Chance of desired successes or greater:
         </li>
     </ul>
