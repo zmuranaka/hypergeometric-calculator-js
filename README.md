@@ -35,9 +35,7 @@ Websites that helped me create the project:
 https://stattrek.com/online-calculator/hypergeometric.aspx  
 &nbsp;&nbsp;&nbsp;&nbsp;The entire inspiration of the project came from this website. My website is laid out similarly, from the order the information is asked to how it is displayed. I also used this website when checking that my program was coming up with the correct numbers.  
 https://www.geeksforgeeks.org/program-to-calculate-the-value-of-ncr-efficiently/  
-&nbsp;&nbsp;&nbsp;&nbsp;This page was very helpful when I was trying to find out how to calculate the combination of n and r without overflowing the long data type. It is still not a perfect solution, but it is much better than what I had come up with.  
-https://www.w3schools.com/howto/howto_js_trigger_button_enter.asp  
-&nbsp;&nbsp;&nbsp;&nbsp;W3Schools was very helpful when I was checking that my syntax was correct and as a general reference. For example, the webpage I linked helped me figure out how to call a function when the user presses the 'enter' key.
+&nbsp;&nbsp;&nbsp;&nbsp;This page was very helpful when I was trying to find out how to calculate the combination of n and r without overflow. It is still not a perfect solution, but it is much better than what I had come up with.
 
 ## Author:
 
