@@ -14,7 +14,7 @@ body {
     min-width: 320px; /* Narrowest screen in common use */
     margin: 0;
     background-color: white;
-    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    font-family: "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
 }
 
 h1 {
